@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pfeamer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".client.litigescc"></activity>
+        <activity android:name=".client.evaluationsc" />
+        <activity android:name=".client.messagesc" />
+        <activity android:name=".client.notificationsc" />
+        <activity android:name=".client.annocesc" />
+        <activity android:name=".client.comptecc" />
+        <activity android:name=".client.profilec" />
+        <activity android:name=".dashbordclient" />
+        <activity android:name=".profile" />
+        <activity android:name=".Forget_pwd" />
+        <activity android:name=".Homepage" />
+        <activity android:name=".register" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

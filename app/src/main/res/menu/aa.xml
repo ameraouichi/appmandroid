@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/cprofile"
+        android:title="profile"
+        android:icon="@drawable/profile"
+        app:showAsAction="always"></item>
+    <item android:id="@+id/ccompte"
+        android:title="compte"
+        app:showAsAction="always"
+        android:icon="@drawable/compte"
+        ></item>
+    <item android:id="@+id/cannonce"
+        android:title="annonces"
+        app:showAsAction="always"
+        android:icon="@drawable/text"
+        ></item>
+    <item android:id="@+id/cnotification"
+        android:title="notifications"
+        app:showAsAction="always"
+        android:icon="@drawable/notification"
+        ></item>
+    <item android:id="@+id/cmessage"
+        android:title="messagerie"
+        app:showAsAction="always"
+        android:icon="@drawable/msg"
+        ></item>
+    <item android:id="@+id/cevaluations"
+        android:title="évaluations"
+        app:showAsAction="always"
+        android:icon="@drawable/review"
+        ></item>
+    <item android:id="@+id/clitegs"
+        android:title="Litiges"
+        app:showAsAction="always"
+        android:icon="@drawable/litiges"
+        ></item>
+</menu>

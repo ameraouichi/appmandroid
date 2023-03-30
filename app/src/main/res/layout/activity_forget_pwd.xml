@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forget_pwd">
+    <include
+        android:id="@+id/frbar"
+        layout="@layout/bar_layout"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:layout_below="@+id/frbar"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Forget password!"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@android:color/darker_gray"
+            android:background="@drawable/white_border"
+            tools:targetApi="P"
+            >
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mail"
+                android:inputType="textEmailAddress"
+                android:hint="Adress Email"
+                app:met_floatingLabel="normal"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                app:met_baseColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:backgroundTint="@color/colorPrimaryDark"
+                app:met_textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="20sp"
+                />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@android:color/darker_gray"
+            android:background="@drawable/violet_border"
+            tools:targetApi="P"
+            >
+            <ProgressBar
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/prgbar"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/colorPrimaryDark"
+                tools:targetApi="LOLLIPOP"
+                android:visibility="gone"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Send reset  message "
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:background="?attr/selectableItemBackground"
+                android:id="@+id/send_msg" />
+        </FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="you will recive as email to reset password "
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            android:layout_margin="20dp"
+            android:id="@+id/reset"/>
+    </LinearLayout>
+</RelativeLayout>
